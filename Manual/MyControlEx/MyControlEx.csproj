@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E9024EFF-DAB4-4F0E-B894-F27DC4B70C7B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyControlEx</RootNamespace>
+    <AssemblyName>MyControlEx</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v24.2, Version=24.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Softhills\VIZZARDX\V1.0.25.502\DevExpress.Data.Desktop.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v24.2, Version=24.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Softhills\VIZZARDX\V1.0.25.502\DevExpress.Data.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Drawing.v24.2, Version=24.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Softhills\VIZZARDX\V1.0.25.502\DevExpress.Drawing.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v24.2.Core, Version=24.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Softhills\VIZZARDX\V1.0.25.502\DevExpress.Pdf.v24.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v24.2.Drawing, Version=24.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Softhills\VIZZARDX\V1.0.25.502\DevExpress.Pdf.v24.2.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v24.2.Core, Version=24.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Softhills\VIZZARDX\V1.0.25.502\DevExpress.Printing.v24.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v24.2.Core, Version=24.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Softhills\VIZZARDX\V1.0.25.502\DevExpress.Sparkline.v24.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v24.2, Version=24.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Softhills\VIZZARDX\V1.0.25.502\DevExpress.Utils.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v24.2, Version=24.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Softhills\VIZZARDX\V1.0.25.502\DevExpress.XtraBars.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v24.2, Version=24.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Softhills\VIZZARDX\V1.0.25.502\DevExpress.XtraEditors.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="PluginConnector">
+      <HintPath>C:\Program Files\Softhills\VIZZARDX\V1.0.25.502\PluginConnector.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VIZCore3DX.Core">
+      <HintPath>C:\Program Files\Softhills\VIZZARDX\V1.0.25.502\VIZCore3DX.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MyClass.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>mkdir C:\Plugins\$(ProjectName)
+xcopy /C /Y $(TargetDir)*.dll C:\Plugins\$(ProjectName)\</PostBuildEvent>
+  </PropertyGroup>
+</Project>
