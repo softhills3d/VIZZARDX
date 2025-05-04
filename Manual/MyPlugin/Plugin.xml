@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<VIZZARDXManager>
+	<Plugins GroupTitle="Plugin Example" Visible="True">
+		<Plugin ID="1" Enable="True" ControlName="MyPlugin.PluginUserControl" AssemblyPath="C:\Plugins\MyPlugin\MyPlugin.dll">
+			<Menu Title="My Plugin Menu" RelationShowControl="" ImagePath="C:\Plugin\MyPlugin\MyPlugin.png" MenuButtonImageSize="0" />
+			<DockingWindow Title="My Plugin Control" Position="2" Width="600" />
+		</Plugin>
+	</Plugins>
+</VIZZARDXManager>
